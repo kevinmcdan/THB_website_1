@@ -1,0 +1,163 @@
+body {
+    background: white;
+    background-size: 100%;
+}
+/*
+iframe {
+    margin: auto;
+}*/
+
+.description {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#forms {
+    border: 10px solid black;
+    background: #eef3ff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+    min-width: 300px;
+    text-align: center;
+}
+
+#forms img{
+    text-align: center;
+    width: 14.5%;
+    margin: .5%;
+}
+
+#forms div div{
+    width: 14.5%;
+    margin: .5%;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    background: white;
+}
+
+#forms h3{
+    font-family: "Impact";
+    font-size: 1.2vw;
+    margin: 6%;
+}
+
+#forms h4{
+    font-size: 1.2vw;
+    text-align: left;
+    
+}
+
+#forms img:hover{
+    cursor: pointer;
+}
+
+.a{
+    border: 2px solid black;
+}
+
+.b{
+    border: 2px solid red;
+}
+
+#minibox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    min-width: 300px;
+}
+
+input{
+    margin-left: 5%;
+}
+
+textarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+button {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.pictures {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    left: 25%;
+    width: 645px;
+    height: 40%;
+    border: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 700;
+    color: black;
+    font-family: 'Roboto Condensed';
+}
+
+h2 {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 700;
+    color: black;
+    font-family: 'Roboto Condensed';
+}
+
+#forms p {
+    font-size: 100%;
+    color: black;
+    font-family:'Roboto Condensed';
+    font-weight: 200;
+    letter-spacing:.1em;
+    line-height: 1vw;
+    clear: both;
+    display: block;
+    font-size: 1vw;
+    text-align: left;
+}
+
+#forms div>p {
+    text-align: center;
+}
+
+.chigau {
+    font-family: 'Roboto Condensed';
+}
+
+a {
+    text-decoration: none;
+}
+
+iframe {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#paypal {
+    display:block;
+    margin:auto;
+}
+
+.description #img{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.description img{
+    width: 48px;
+    margin-right: 20px;
+}

@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    /*background: #eef3ff;*/
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    z-index: 100;
+    border: black solid 5px;
+    margin: 0px;
+    overflow:hidden;
+    min-height: 50px;
+}
+
+
+#left img {
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: 5px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  
+    vertical-align: middle;
+}
+
+#left{
+    float: left;
+    height: 55px;
+    margin-bottom: 0px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    padding-right: 14px;
+    /*background: white;*/
+}
+
+#right{
+    float: right;
+    padding-right: 0px;
+    width: 40%;
+    min-width: 400px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#header h2 {
+    line-height: 6px;
+    vertical-align: top;
+    display: inline-block;
+    font-family:'Roboto Condensed';
+    font-size: 180%;
+    color: black;
+    letter-spacing: normal;
+    text-shadow: none;
+    background: none;
+    /*text-shadow: 2px 2px white, 3px 3px black;*/
+    
+}
+
+#header h3 {
+    /*border: 1px solid black;*/
+    padding: 4px;
+    line-height: 40px;
+    display: inline;
+    font-family:'Roboto Condensed';
+    font-size: 110%;
+    /*background: white;*/
+    letter-spacing: normal;
+    text-shadow: none;
+    background: none;
+}
+
+#right p{
+    font-family:'Roboto Condensed';
+    font-size: 100%;
+    display: inline;
+    color: black;
+}
+
+#right h3:hover{
+    cursor: pointer;
+}
+
+#header a{
+    text-decoration: none;
+}

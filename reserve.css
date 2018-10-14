@@ -1,0 +1,79 @@
+body {
+    background: rgb(192, 207, 232);
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 150%;
+    color: black;
+    font-family: sans-serif;
+    text-shadow: 2px 2px white;
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+    color: black;
+    font-family: sans-serif;
+    text-shadow: 2px 2px white;
+}
+
+#forms {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.entry {
+    float: right;
+    clear: both;
+}
+
+#errorline {
+    color: red;
+}
+
+select{
+    width: 234px;
+}
+
+.selectpicker{
+    clear: both;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+#back{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+
+.small{
+    color: black;
+    text-shadow: none;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.textarea{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+timeList {
+    text-align: center;
+}
+
+#paypal {
+    display: block;
+    margin: auto;
+}

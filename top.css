@@ -1,0 +1,97 @@
+body {
+    margin-top: 120px;
+    background-image: url("beachbg.jpg");
+    background-size: 100%;
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bigdiv {
+    display: block;
+    margin-top: 1%;
+    padding-top: 12px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.link{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.textbox {
+    display: inline-block;
+    float: left;
+    width: 37%;
+    height: inherit;
+    text-align: left;
+}
+
+.iconbox {
+    display: inline-block;
+    float: right;
+    left: 50px;
+    width: 60%;
+    min-width: 40px;
+    text-align: center;
+}
+
+.icon {
+    width: 18%;
+    min-width: 70px;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 200%;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+
+.boring {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    text-shadow: none;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.blackdiv {
+    font-size: 125%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 150px;
+    background-image: url("top/parchmentbg.jpg");
+    background-size: 100% 100%;
+    /*width: 80%;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+p {
+    font-size: 130%;
+    min-font-size: 30px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}

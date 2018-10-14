@@ -1,0 +1,42 @@
+body {
+    background: black;
+    background-size: 100%;
+}
+/*
+iframe {
+    margin: auto;
+}*/
+
+.pictures {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    left: 25%;
+    width: 645px;
+    height: 40%;
+    border: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    font-family: rock-salt;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    font-family: rock-salt;
+    text-shadow: 2px 2px black;
+}
+
+.chigau {
+    font-family: rock-salt;
+}
+
+a {
+    text-decoration: none;
+}

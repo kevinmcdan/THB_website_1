@@ -1,0 +1,129 @@
+body{
+    background-image: url("beachbg.jpg");
+    background-size: 100%;
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+
+#container{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 100px;
+}
+
+#banner {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.video{
+    width: 13%;
+}
+
+.kiss{
+    width: 23%;
+}
+
+#buttonbox{
+    text-align: center;
+}
+
+h1{
+    font-size: 4vw;
+    font-family: 'Impact';
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px white;
+    letter-spacing: .2em;
+}
+
+div>div>div{
+    display: inline-block;
+    width: 30vw;
+    min-width: 200px;
+    min-height: 133px;
+    height: 20vw;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+}
+
+#nakano{
+    background-image:url("foodtour_small.jpg");
+}
+
+#downtown{
+    background-image:url("downtown.jpg");
+}
+
+#custom{
+    background-image:url("customtour_small.JPG");
+}
+
+#nichome{
+    background-image:url("nichome.JPG");
+    display: inline-block;
+    margin: auto;
+    width: 90vw;
+    min-height: 133px;
+    height: 20vw;
+
+    background-position: 100% 50%; 
+    background-size: cover;
+}
+
+
+div>div>div:hover{
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+#nichome:hover{
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+div>h2{
+    font-size: 2vw;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px white;
+    background: rgba(255, 255, 255, 0.5);
+    letter-spacing: .1em;
+    font-family: 'Impact';
+}
+
+div>h3{
+    font-size: 1.2vw;
+    margin-top: 0%;
+    text-shadow: 2px 2px white;
+    background: rgba(255, 255, 255, 0.5);
+    letter-spacing: .1em;
+    font-family: 'Impact';
+    text-align: center;
+}
+
+.back {
+    font-size: 1.5vw;
+    min-font-size: 100px;
+    font-family: rock-salt;
+    text-shadow: 2px 2px white;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 2%;
+}
+
+p {
+    font-family: 'Impact';
+    color: white;
+}

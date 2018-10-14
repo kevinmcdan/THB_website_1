@@ -1,0 +1,118 @@
+body {
+    background: white;
+    background-size: 100%;
+    margin: 0px;
+}
+/*
+iframe {
+    margin: auto;
+}*/
+
+.description {
+    margin-top: 150px;
+}
+
+#textbox img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 27px;
+}
+
+#textbox #banner {
+    width: 100%;
+    box-shadow: 8px 8px #68d5da;
+}
+    
+#textbox .description {
+    margin-top: 100px;
+}
+
+#textbox .pictures {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    left: 25%;
+    width: 645px;
+    height: 40%;
+    border: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 700;
+    color: black;
+    font-family: 'Roboto Condensed';
+    text-shadow:  2px 2px white, 3px 3px black;
+}
+
+#textbox h2 {
+    font-size: 150%;
+    font-weight: 400;
+    color: black;
+    font-family: 'Roboto Condensed';
+    line-height: 50px;
+    letter-spacing: .1em;
+}
+
+#textbox h3 {
+    font-size: 110%;
+    font-weight: 400;
+    color: black;
+    font-family: 'Roboto Condensed';
+    line-height: 50px;
+    letter-spacing: .1em;
+}
+
+#textbox .title {
+    display: block;
+}
+
+#textbox p {
+    font-size: 100%;
+    color: black;
+    font-family:'Roboto Condensed';
+    font-weight: 200;
+    letter-spacing:.1em;
+    line-height: 30px;
+}
+
+#textbox {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descbox {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 20%;
+}
+
+#textbox .descbox>h1 {
+    line-height: 18px;
+    font-size: 1.25vw;
+    letter-spacing:.1em;
+    display: block;
+    text-align: center;
+    text-shadow: 4px 4px #68d5da;
+}
+
+#textbox .descbox>h2 {
+    line-height: 18px;
+    font-size: 1vw;
+    display: block;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+#textbox .chigau {
+    font-family: rock-salt;
+}
+
+#textbox a {
+    text-decoration: none;
+}

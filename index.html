@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Tokyo Handsome Boys is rethinking tours. Your new one-of-a-kind adventure starts here. Take a chance on Handsome!!">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="frontpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:300,400,700">
+	<title>Tokyo Handsome Boys Japan Tours</title>
+<meta name='robots' content='index,follow' />
+</head>
+<body onload="deleteText()">
+    <?php include_once("analyticstracking.php") ?>
+<div class="fullscreen-bg">
+    <h1 id="text">NOW LOADING...</h1>
+    <video loop muted autoplay poster="img/videoframe.jpg"  class="fullscreen-bg__video">
+       <source src="mainpagemovie.mp4" id="video" type="video/mp4">
+    </video>
+    </br>
+    <h2>Tokyo Tours by</h2>
+    <h1>TOKYO HANDSOME BOYS</h1>
+    <a href="top.html"><img class="link" src="enter.png"></img></a>
+</div>
+</body>
+<script>
+    function deleteText(){
+        text = document.getElementById("text");
+        text.innerHTML = "";
+    }
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92274116-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

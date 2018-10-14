@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/redressed:n4:all;rock-salt:n4:all.js" type="text/javascript">\x3C/script>');
+</script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Tokyo Is Boring">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="oldtours.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Convergence" rel="stylesheet">
+	<title>Main Page</title>
+<meta name='robots' content='noindex,follow' />
+</head>
+<body id="body">   
+<div id="iconBox">
+    <script>
+        var nakanoDesc = "Quality sake, delicious yakitori: Little restaurants with big taste. ";
+        
+        var nakanoDetl = "Length: 3 hours<br/>Price: 6000 yen per person (food and drink excluded)<br/>Contents:<br/>&emsp;Appetizer: fresh-prepared sashimi (~500 yen per person)<br/>&emsp;First Course: yakitori & nimono in traditional bar (~1000 yen per person) <br/>&emsp;Second Course: okonomiyaki (~500 yen per person)<br/>&emsp;Nightcap: standing sake bar (~700 yen per drink) OR craft beer canopy (500 yen per drink)";
+        
+        var downtownDesc = "In a small area of West Tokyo lies several of the most essential tourist spots in Tokyo. We take advantage of their proximity to provide a specially selected walking tour, starting with the breathtaking Meiji Shrine, through the Takeshita 'fashion street' of Harajuku, all the way to the Shibuya Scramble, the most crowded street crossing in the world. We also don't forget to appreciate the local flavor along the way. Perfect for your first time in Tokyo!";
+        
+        var downtownDetl = "Length: 4 hours<br/>Price: 6000 yen per person (food and drink excluded)<br/>Contents:<br/>&emsp;Meiji Shrine - a natural wonder in the heart of the metropolis<br/>&emsp;Harajuku - The cutting edge of Tokyo pop culture<br/>&emsp;Omotesando - High-class brands and high society<br/>&emsp;Cat Street - The hip & funky backroad of the big city<br/>&emsp;Shibuya - No words will do it justice";
+        
+        var customDesc = "Our finest offering, the CUSTOM TOUR is the pride of the Tokyo Handsome Boys. Honestly, only you know what you want to get out of Tokyo, and we know that. But we also know Tokyo. In this tour, you tell us what kind of tour experience you want, and we will craft the ideal tour for you down to your tiniest request. And when you want to break from the plan to explore an interesting area or check out a cute cafe, we are behind you 120%!! In our explorations with our previous guests, we have learned as much we have showed, and we want to use that to create a new adventure with you. Let's make your TOKYO ADVENTURE something really unique.";
+        
+        var customDetl = "Length: 4-6 hours<br/>Price: 8000 yen per person (food and drink excluded)<br/>Contents:<br/>&emsp;Specially designed for each customer directly by us.<br/>&emsp;Eating and non-eating, drinking and non-drinking courses equally welcome.<br/>&emsp;Your adventure will develop naturally as we explore Tokyo.<br/>&emsp;We will create a ~4 hour plan as a base and allow the course to expand from there.";
+        
+    </script>
+    <img class="icon" src="nakanotour.png" onmouseover="enlarge(this)" onmouseout="shrink(this)" onclick="bannerOpen('Nakano Food Tour', nakanoDesc); return false;"></img>
+    <img class="icon" src="downtowntour.png" onmouseover="enlarge(this)" onmouseout="shrink(this)" onclick="bannerOpen('Downtown Walking Tour', downtownDesc); return false;"></img>
+    <img class="icon" src="customtour.png" onmouseover="enlarge(this)" onmouseout="shrink(this)" onclick="bannerOpen('Custom Tour', customDesc); return false;"></img>
+</div>
+<div id="banner"></div>
+<a href="top.html"><p class="back" style="color: red">BACK</p></a>
+</body>
+
+<form action="reserve.php" method="get" id="reserveForm">
+<input type="hidden" id="getVal" value="Nakano Food Tour" name="tour">
+</form>
+
+<script>
+    /*
+    function enlarge(icon){
+        var icons = document.getElementsByClassName("icon");
+        for (var i = 0; i < icons.length; i++)
+            shrink(icons[i]);
+        var x = 200;
+        var y = 200;
+        var c = 0;
+        resize(icon, x, y, c);
+    }
+        
+    function resize(icon, x, y, c){
+        if (c<25){ 
+			c++;
+			x += 1; // 1 number of pixels to resize by each time
+			y += 1;
+			icon.style.width = x + "px";
+			icon.style.height = y + "px";
+			setTimeout(resize, 3, icon, x, y, c); // 100 milliseconds per resize
+		}
+    }
+    
+    function shrink(icon){
+        icon.style.width = "200px";
+        icon.style.height = "200px";
+    }
+    */
+    
+    function bannerOpen(titleText, descText) {
+        if (document.getElementById("banner").firstChild != null){
+            document.getElementById("banner").removeChild(
+                document.getElementById("banner").firstChild
+            );
+        
+        }
+        var node = document.createElement("div");
+        var bg = document.createElement("div");
+        var titleBox = document.createElement("div");
+        var title = document.createElement("h1");
+        title.innerHTML = titleText;
+        var descBox = document.createElement("div");
+        var desc = document.createElement("h2");
+        desc.innerHTML = descText;
+        titleBox.appendChild(title);
+        descBox.appendChild(desc);
+        node.appendChild(bg);
+        bg.appendChild(titleBox);
+        bg.appendChild(descBox);
+        
+        //buttons
+        var buttonBox1 = document.createElement("div");
+        var buttonBox2 = document.createElement("div");
+        var buttonBox3 = document.createElement("div");
+        var buttonBox4 = document.createElement("div");
+        var button1 = document.createElement("p");
+        var button2 = document.createElement("p");
+        var button3 = document.createElement("p");
+        var button4 = document.createElement("p");
+        button1.innerHTML = "Overview";
+        button2.innerHTML = "Details";
+        button3.innerHTML = "Episodes";
+        button4.innerHTML = "Reviews";
+        buttonBox1.appendChild(button1);
+        buttonBox2.appendChild(button2);
+        buttonBox3.appendChild(button3);
+        buttonBox4.appendChild(button4);
+        bg.appendChild(buttonBox1);
+        bg.appendChild(buttonBox2);
+        bg.appendChild(buttonBox3);
+        bg.appendChild(buttonBox4);
+        buttonBox1.setAttribute("class", "buttonBox");
+        buttonBox2.setAttribute("class", "buttonBox");
+        buttonBox3.setAttribute("class", "buttonBox");
+        buttonBox4.setAttribute("class", "buttonBox");
+        button1.setAttribute("class", "button");
+        button2.setAttribute("class", "button");
+        button3.setAttribute("class", "button");
+        button4.setAttribute("class", "button");
+        button1.setAttribute("id", "button1");
+        button2.setAttribute("id", "button2");
+        button3.setAttribute("id", "button3");
+        button4.setAttribute("id", "button4");
+        node.setAttribute("id", "node");
+        buttonBox1.style.left = "20%";
+        buttonBox2.style.left = "40%";
+        buttonBox3.style.left = "60%";
+        buttonBox4.style.left = "80%";
+        buttonBox1.style.borderBottom = "5px solid red";
+        
+        var reserveBox = document.createElement("div");
+        var reserve = document.createElement("p");
+        reserve.innerHTML = "RESERVE";
+        reserveBox.appendChild(reserve);
+        descBox.appendChild(reserveBox);
+        reserveBox.setAttribute("id", "reserveBox");
+        reserve.setAttribute("id", "reserve");
+        
+        bg.setAttribute("id", "bg");
+        node.setAttribute("class", "w3-container w3-center w3-animate-opacity");
+        titleBox.setAttribute("id", "titleBox");
+        title.setAttribute("id", "title");
+        descBox.setAttribute("id", "descBox");
+        desc.setAttribute("id", "desc");
+        /*desc.setAttribute("class", "w3-container w3-center w3-animate-opacity");*/
+        document.getElementById("banner").appendChild(node);
+        
+        buttonBox1.onclick = function(){
+            changeView(buttonBox1);
+        }
+        
+        buttonBox2.onclick = function(){
+            changeView(buttonBox2);
+        }
+        
+        buttonBox3.onclick = function(){
+            changeView(buttonBox3);
+        }
+        
+        buttonBox4.onclick = function(){
+            changeView(buttonBox4);
+        }
+        
+        reserveBox.onclick = function(){
+            var title = document.getElementById('title');
+            var reserveForm = document.getElementById('reserveForm');
+            var getVal = document.getElementById('getVal').value;
+            console.log(title.innerHTML);
+            document.getElementById('getVal').value = title.innerHTML;
+            console.log(getVal);
+            reserveForm.submit();
+        }
+    }
+    
+    function changeView(myButton){
+        var title = document.getElementById('title');
+        console.log(myButton.firstChild.innerHTML);
+        if (title.innerHTML == "Nakano Food Tour") {
+            if (myButton.firstChild.innerHTML == "Overview"){
+                document.getElementById('desc').innerHTML = nakanoDesc;
+            }
+            if (myButton.firstChild.innerHTML == "Details"){
+                document.getElementById('desc').innerHTML = nakanoDetl;
+            }
+        }
+        if (title.innerHTML == "Downtown Walking Tour") {
+            if (myButton.firstChild.innerHTML == "Overview"){
+                document.getElementById('desc').innerHTML = downtownDesc;
+            }
+            if (myButton.firstChild.innerHTML == "Details"){
+                document.getElementById('desc').innerHTML = downtownDetl;
+            }
+        }
+        if (title.innerHTML == "Custom Tour") {
+            if (myButton.firstChild.innerHTML == "Overview"){
+                document.getElementById('desc').innerHTML = customDesc;
+            }
+            if (myButton.firstChild.innerHTML == "Details"){
+                document.getElementById('desc').innerHTML = customDetl;
+            }
+        }
+        var buttons = document.getElementsByClassName('buttonBox');
+        for (i=0; i < buttons.length; i++) {
+            buttons[i].style.border = "initial";
+        }
+        myButton.style.borderBottom = "5px solid red";
+    }
+    
+</script>
+</html>

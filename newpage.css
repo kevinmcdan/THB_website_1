@@ -1,0 +1,28 @@
+body {
+    background-image: url("IMG_2073.jpg");
+    background-size: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 5%;
+    right: 38%;
+    width: 58%;
+    height: 40%;
+    border: 1px;
+}
+
+h1 {
+    font-size: 200%;
+    color: white;
+    font-family: "Ariel Black", sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+.chigau {
+    font-family: rock-salt;
+}
+
+a{
+    text-decoration: none;
+}

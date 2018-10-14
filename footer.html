@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/redressed:n4:all;rock-salt:n4:all.js" type="text/javascript">\x3C/script>');
+</script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Tokyo Is Boring">	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'">
+    
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:300,400,700">
+	<title>About Us</title>
+<meta name='robots' content='noindex,follow' />
+</head>
+<body> 
+<div id="footer">
+    <p id="errorline" style="color:red"></p>
+    <select data-live-search="false" title="Please enter your Group Size" id="groupsize" onchange="if (this.selectedIndex) calculatePrice();" class="entry">
+        
+            <option value="0" selected="selected">Group Size</option>
+                <option value="1" >1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="5" >5</option>
+                <option value="6" >6</option>
+                <option value="7" >7</option>
+                <option value="8" >8</option>
+              </select>
+    <p>Date:<input type="text" id="datepicker"></p>
+    <p id="price">¥0</p>
+    <h3 onclick="checkForm();">Reserve Tour</h3>
+</div>
+
+</body>
+</html>
